@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+    <p>Would you like to delete this entry {{object.source}}</p>
+    <button class="btn btn-sm btn-danger" type="submit">Delete</button>
+</form>
+<p></p>
+
+{% endblock %}

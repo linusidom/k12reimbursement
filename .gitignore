@@ -1,0 +1,6 @@
+*venv_reimburse
+.DS_Store
+__pycache__
+__init__.py
+migrations
+db.sqlite3
