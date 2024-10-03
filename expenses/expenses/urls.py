@@ -25,3 +25,8 @@ urlpatterns = [
     path('converter/', include('converter.urls', namespace='converter')),
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler400 = "django.views.defaults.bad_request"
+handler404 = "django.views.defaults.page_not_found"
+handler403 = "django.views.defaults.permission_denied"
+handler500 = "django.views.defaults.server_error"
